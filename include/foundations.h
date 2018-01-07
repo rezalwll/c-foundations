@@ -1,0 +1,8 @@
+#ifndef FOUNDATIONS_H
+#define FOUNDATIONS_H
+
+#include <stddef.h>
+
+int array_sum(const int *values, size_t length);
+
+#endif
