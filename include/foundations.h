@@ -5,4 +5,6 @@
 
 int array_sum(const int *values, size_t length);
 
+int array_max(const int *values, size_t length);
+
 #endif
