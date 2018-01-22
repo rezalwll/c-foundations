@@ -14,3 +14,10 @@ int array_max(const int *values, size_t length) {
     for (size_t index = 1; index < length; ++index) if (values[index] > result) result = values[index];
     return result;
 }
+
+int array_range(const int *values, size_t length) {
+    if (length == 0) return 0;
+    int low = values[0], high = values[0];
+    for (size_t index = 1; index < length; ++index) { if (values[index] < low) low = values[index]; if (values[index] > high) high = values[index]; }
+    return high - low;
+}
