@@ -9,4 +9,6 @@ int array_max(const int *values, size_t length);
 
 int array_range(const int *values, size_t length);
 
+int array_count_positive(const int *values, size_t length);
+
 #endif
