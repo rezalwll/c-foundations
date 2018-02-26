@@ -13,4 +13,6 @@ int array_count_positive(const int *values, size_t length);
 
 int array_count_nonzero(const int *values, size_t length);
 
+int array_first(const int *values, size_t length);
+
 #endif

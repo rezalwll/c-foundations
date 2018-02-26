@@ -33,3 +33,7 @@ int array_count_nonzero(const int *values, size_t length) {
     for (size_t index = 0; index < length; ++index) total += values[index] != 0;
     return total;
 }
+
+int array_first(const int *values, size_t length) {
+    return length == 0 ? 0 : values[0];
+}
