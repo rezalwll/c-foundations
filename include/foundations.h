@@ -15,4 +15,6 @@ int array_count_nonzero(const int *values, size_t length);
 
 int array_first(const int *values, size_t length);
 
+int array_last(const int *values, size_t length);
+
 #endif

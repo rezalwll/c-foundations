@@ -37,3 +37,7 @@ int array_count_nonzero(const int *values, size_t length) {
 int array_first(const int *values, size_t length) {
     return length == 0 ? 0 : values[0];
 }
+
+int array_last(const int *values, size_t length) {
+    return length == 0 ? 0 : values[length - 1];
+}
