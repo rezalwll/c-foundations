@@ -41,3 +41,9 @@ int array_first(const int *values, size_t length) {
 int array_last(const int *values, size_t length) {
     return length == 0 ? 0 : values[length - 1];
 }
+
+int array_count_increasing_pairs(const int *values, size_t length) {
+    int total = 0;
+    for (size_t index = 1; index < length; ++index) total += values[index] > values[index - 1];
+    return total;
+}

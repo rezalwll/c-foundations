@@ -17,4 +17,6 @@ int array_first(const int *values, size_t length);
 
 int array_last(const int *values, size_t length);
 
+int array_count_increasing_pairs(const int *values, size_t length);
+
 #endif
