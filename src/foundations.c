@@ -53,3 +53,9 @@ int array_even_sum(const int *values, size_t length) {
     for (size_t index = 0; index < length; ++index) if (values[index] % 2 == 0) total += values[index];
     return total;
 }
+
+int array_odd_sum(const int *values, size_t length) {
+    int total = 0;
+    for (size_t index = 0; index < length; ++index) if (values[index] % 2 != 0) total += values[index];
+    return total;
+}

@@ -21,4 +21,6 @@ int array_count_increasing_pairs(const int *values, size_t length);
 
 int array_even_sum(const int *values, size_t length);
 
+int array_odd_sum(const int *values, size_t length);
+
 #endif
