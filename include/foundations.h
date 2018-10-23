@@ -23,4 +23,6 @@ int array_even_sum(const int *values, size_t length);
 
 int array_odd_sum(const int *values, size_t length);
 
+int array_index_of_max(const int *values, size_t length);
+
 #endif

@@ -59,3 +59,10 @@ int array_odd_sum(const int *values, size_t length) {
     for (size_t index = 0; index < length; ++index) if (values[index] % 2 != 0) total += values[index];
     return total;
 }
+
+int array_index_of_max(const int *values, size_t length) {
+    if (length == 0) return -1;
+    size_t result = 0;
+    for (size_t index = 1; index < length; ++index) if (values[index] > values[result]) result = index;
+    return (int)result;
+}
