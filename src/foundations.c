@@ -73,3 +73,7 @@ int array_index_of_min(const int *values, size_t length) {
     for (size_t index = 1; index < length; ++index) if (values[index] < values[result]) result = index;
     return (int)result;
 }
+
+int array_middle(const int *values, size_t length) {
+    return length == 0 ? 0 : values[length / 2];
+}
