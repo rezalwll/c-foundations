@@ -77,3 +77,10 @@ int array_index_of_min(const int *values, size_t length) {
 int array_middle(const int *values, size_t length) {
     return length == 0 ? 0 : values[length / 2];
 }
+
+int array_max_2(const int *values, size_t length) {
+    if (length == 0) return 0;
+    int result = values[0];
+    for (size_t index = 1; index < length; ++index) if (values[index] > result) result = values[index];
+    return result;
+}
