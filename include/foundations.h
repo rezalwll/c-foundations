@@ -33,4 +33,6 @@ int array_max_2(const int *values, size_t length);
 
 int array_min_2(const int *values, size_t length);
 
+int array_range_2(const int *values, size_t length);
+
 #endif
