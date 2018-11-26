@@ -98,3 +98,9 @@ int array_range_2(const int *values, size_t length) {
     for (size_t index = 1; index < length; ++index) { if (values[index] < low) low = values[index]; if (values[index] > high) high = values[index]; }
     return high - low;
 }
+
+int array_count_positive_2(const int *values, size_t length) {
+    int total = 0;
+    for (size_t index = 0; index < length; ++index) total += values[index] > 0;
+    return total;
+}
