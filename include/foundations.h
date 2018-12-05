@@ -37,4 +37,6 @@ int array_range_2(const int *values, size_t length);
 
 int array_count_positive_2(const int *values, size_t length);
 
+int array_weighted_sum_2(const int *values, size_t length);
+
 #endif
