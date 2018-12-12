@@ -110,3 +110,9 @@ int array_weighted_sum_2(const int *values, size_t length) {
     for (size_t index = 0; index < length; ++index) total += values[index] * (int)(index + 1);
     return total;
 }
+
+int array_count_nonzero_2(const int *values, size_t length) {
+    int total = 0;
+    for (size_t index = 0; index < length; ++index) total += values[index] != 0;
+    return total;
+}
