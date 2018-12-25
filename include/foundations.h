@@ -43,4 +43,6 @@ int array_count_nonzero_2(const int *values, size_t length);
 
 int array_sum_absolute_2(const int *values, size_t length);
 
+int array_first_2(const int *values, size_t length);
+
 #endif

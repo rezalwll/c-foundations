@@ -122,3 +122,7 @@ int array_sum_absolute_2(const int *values, size_t length) {
     for (size_t index = 0; index < length; ++index) total += values[index] < 0 ? -values[index] : values[index];
     return total;
 }
+
+int array_first_2(const int *values, size_t length) {
+    return length == 0 ? 0 : values[0];
+}
